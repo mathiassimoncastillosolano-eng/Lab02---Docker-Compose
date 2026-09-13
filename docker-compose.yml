@@ -10,4 +10,14 @@ services:
       - MESSAGE=${NOMBRE}
     ports:
       - "3000:3000"
+
+  
+  api02:
+    container_name: api02
+    build: ./api
+
+    environment:
+      - MESSAGE=${NOMBRE2}
+    ports:
+      - "3001:3000"
     
